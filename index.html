@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hirakana</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <!--Font Japanese kana-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font for the site-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 id="title" class="corail">Hirakana</h1>
+    </header>
+
+    <main>
+      <p class="beige">
+        Choisissez votre option et tapez la proposition qui s'affiche dans le
+        champ en-dessous.
+      </p>
+      <div id="container-button">
+        <button id="hiragana" onclick="startQuiz('hiragana')">hiragana</button>
+        <button id="katakana" onclick="startQuiz('katakana')">katakana</button>
+        <button id="kana" onclick="startMixedQuiz('kana')">
+          hiragana et katakana
+        </button>
+      </div>
+      <div id="proposal" class="bleu"></div>
+      <div id="answer-container">
+        <input type="text" id="input-writing" name="proposal" />
+        <button id="validate">Valider</button>
+      </div>
+    </main>
+
+    <footer>
+      <p id="copyright">@Copyright : Tristan</p>
+    </footer>
+  </body>
+</html>
