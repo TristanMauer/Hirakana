@@ -3,6 +3,7 @@
   font-family: "Poppins", system-ui;
   font-weight: 400;
   font-style: normal;
+  box-sizing: border-box;
 }
 body {
   display: flex;
@@ -10,6 +11,7 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
+  overflow: hidden;
   background-color: #e0e0e0;
 }
 header {
@@ -20,7 +22,6 @@ button {
   color: #001233;
   border: none;
   border-radius: 5px;
-  margin-left: 20px;
 }
 button:hover {
   background-color: #e0e0e0;
@@ -63,7 +64,8 @@ main {
 
 #container-button {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+
   flex-direction: row;
   margin: 20px 0 20px 0;
   height: 40px;
@@ -71,7 +73,6 @@ main {
 }
 
 #container-button button {
-  margin-left: 20px;
   width: 30%;
 }
 
@@ -101,6 +102,7 @@ main {
 }
 #validate {
   width: 20%;
+  margin-left: 20px;
 }
 
 footer {
@@ -123,9 +125,23 @@ footer {
     beige -> #CAC0B3
 }**/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 657px) {
+  * {
+    font-size: 13px;
+  }
+
   main {
-    width: 90%;
-    height: 500px;
+    width: 85%;
+    font-size: 13px;
+    padding: 30px;
+    height: 300px;
+  }
+
+  #proposal {
+    height: auto;
+  }
+
+  #validate {
+    width: auto;
   }
 }
