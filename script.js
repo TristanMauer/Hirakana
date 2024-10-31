@@ -4,7 +4,9 @@ let kana = [];
 let correctAnswer = "";
 let proposal = document.getElementById("proposal"); // Cast de l'élément
 let statut = 0;
-
+document.addEventListener("DOMContentLoaded", () => {
+  startQuiz("hiragana");
+});
 // Fonction générique pour démarrer un quiz
 async function startQuiz(type) {
   currentQuizz = 0;
