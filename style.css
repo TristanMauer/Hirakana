@@ -125,16 +125,17 @@ footer {
     beige -> #CAC0B3
 }**/
 
-@media screen and (max-width: 657px) {
+@media screen and (max-width: 900px) {
   * {
     font-size: 13px;
   }
 
   main {
-    width: 85%;
+    width: 90%;
     font-size: 13px;
     padding: 30px;
     height: 300px;
+    margin: 0 50px 0 50px;
   }
 
   #proposal {
